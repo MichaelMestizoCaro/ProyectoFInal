@@ -1,0 +1,1963 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5d7a16db736ea6253836669301e9b4f5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5d7a16db736ea6253836669301e9b4f5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5d7a16db736ea6253836669301e9b4f5 = L.map(
+                "map_5d7a16db736ea6253836669301e9b4f5",
+                {
+                    center: [4.6, -74.1],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_05a329f07fe839799f229f44c7131186 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_05a329f07fe839799f229f44c7131186.addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var marker_e9bcc052a690397d779ef5dca879ed6a = L.marker(
+                [4.68927147526143, -74.1565191283558],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_194ceeb7cd9a5db0f28933089fe768c9 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:gray;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid gray;\n        \"\u003e\n            \u003ci class=\"fa fa-warehouse\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_e9bcc052a690397d779ef5dca879ed6a.bindTooltip(
+                `<div>
+                     DC1 (Sin flujo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e9bcc052a690397d779ef5dca879ed6a.setIcon(div_icon_194ceeb7cd9a5db0f28933089fe768c9);
+            
+    
+            var marker_930f631e64daf6deece6b2677c80c4ff = L.marker(
+                [4.68927147526143, -74.1565191283558],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_904bd02157b3e031c8341d0582bcb97b = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:gray;\u0027\u003eDC1\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_930f631e64daf6deece6b2677c80c4ff.setIcon(div_icon_904bd02157b3e031c8341d0582bcb97b);
+            
+    
+            var marker_e923d260b2f56a6d27197ef8aa034735 = L.marker(
+                [4.69052618794061, -74.1592293608355],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_0fc29b57f7909ebdc79f3811e76b53e6 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:gray;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid gray;\n        \"\u003e\n            \u003ci class=\"fa fa-gears\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_e923d260b2f56a6d27197ef8aa034735.bindTooltip(
+                `<div>
+                     BP1 (Sin flujo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e923d260b2f56a6d27197ef8aa034735.setIcon(div_icon_0fc29b57f7909ebdc79f3811e76b53e6);
+            
+    
+            var marker_e30b8c320360799641c5deb0ae356332 = L.marker(
+                [4.69052618794061, -74.1592293608355],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_2ba7df3b0f7c25ad96612bc3f156a59e = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:gray;\u0027\u003eBP1\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_e30b8c320360799641c5deb0ae356332.setIcon(div_icon_2ba7df3b0f7c25ad96612bc3f156a59e);
+            
+    
+            var marker_783bdaab2b5229c18496bee59857883c = L.marker(
+                [4.69424487112543, -74.1550853001984],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_15c26e0d9e92777738785d0a20aae593 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:gray;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid gray;\n        \"\u003e\n            \u003ci class=\"fa fa-gears\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_783bdaab2b5229c18496bee59857883c.bindTooltip(
+                `<div>
+                     BP2 (Sin flujo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_783bdaab2b5229c18496bee59857883c.setIcon(div_icon_15c26e0d9e92777738785d0a20aae593);
+            
+    
+            var marker_c24b8afe1f663c51757541802492d218 = L.marker(
+                [4.69424487112543, -74.1550853001984],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_7fe8086ba936d5a280957b6989be4200 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:gray;\u0027\u003eBP2\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_c24b8afe1f663c51757541802492d218.setIcon(div_icon_7fe8086ba936d5a280957b6989be4200);
+            
+    
+            var marker_42f4c5f6b5fc55ab6c75ada8a56e01e8 = L.marker(
+                [4.690310939242331, -74.16020529361677],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_19fc00d1af0fe56df92b4f427dc85eaf = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:gray;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid gray;\n        \"\u003e\n            \u003ci class=\"fa fa-gears\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_42f4c5f6b5fc55ab6c75ada8a56e01e8.bindTooltip(
+                `<div>
+                     BP3 (Sin flujo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_42f4c5f6b5fc55ab6c75ada8a56e01e8.setIcon(div_icon_19fc00d1af0fe56df92b4f427dc85eaf);
+            
+    
+            var marker_a57d55e3fde2d67958417f993794b521 = L.marker(
+                [4.690310939242331, -74.16020529361677],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_1b6891ca7835cd7f071fd53153c004b5 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:gray;\u0027\u003eBP3\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_a57d55e3fde2d67958417f993794b521.setIcon(div_icon_1b6891ca7835cd7f071fd53153c004b5);
+            
+    
+            var marker_581f78201ed4c65990fb79504cb39da5 = L.marker(
+                [4.64638065850496, -74.1194667],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_90cd200c3de3c4aa0f5a6374ae341b60 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:gray;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid gray;\n        \"\u003e\n            \u003ci class=\"fa fa-gears\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_581f78201ed4c65990fb79504cb39da5.bindTooltip(
+                `<div>
+                     BP4 (Sin flujo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_581f78201ed4c65990fb79504cb39da5.setIcon(div_icon_90cd200c3de3c4aa0f5a6374ae341b60);
+            
+    
+            var marker_a482225869c18fb62b496a7da652a9ab = L.marker(
+                [4.64638065850496, -74.1194667],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_cf442d03858091b6a7c3623786d08907 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:gray;\u0027\u003eBP4\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_a482225869c18fb62b496a7da652a9ab.setIcon(div_icon_cf442d03858091b6a7c3623786d08907);
+            
+    
+            var marker_0c84a38d0625db6b24ee5370dab2014f = L.marker(
+                [4.6323546874131045, -74.1208533010641],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_d16230f582c0ec3e0135bc30595ee0b1 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:gray;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid gray;\n        \"\u003e\n            \u003ci class=\"fa fa-gears\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_0c84a38d0625db6b24ee5370dab2014f.bindTooltip(
+                `<div>
+                     BP5 (Sin flujo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0c84a38d0625db6b24ee5370dab2014f.setIcon(div_icon_d16230f582c0ec3e0135bc30595ee0b1);
+            
+    
+            var marker_f9b1bbe35eb00ad20d1f5c7c2042fa26 = L.marker(
+                [4.6323546874131045, -74.1208533010641],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_f42121204773cff9139b8c061fdaa488 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:gray;\u0027\u003eBP5\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_f9b1bbe35eb00ad20d1f5c7c2042fa26.setIcon(div_icon_f42121204773cff9139b8c061fdaa488);
+            
+    
+            var marker_d611ebce69af7fdc56981329993936ce = L.marker(
+                [4.637163636424813, -74.12124917595436],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_884bee81791b5e72b3b2812ecc6efd1d = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:gray;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid gray;\n        \"\u003e\n            \u003ci class=\"fa fa-gears\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_d611ebce69af7fdc56981329993936ce.bindTooltip(
+                `<div>
+                     BP6 (Sin flujo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d611ebce69af7fdc56981329993936ce.setIcon(div_icon_884bee81791b5e72b3b2812ecc6efd1d);
+            
+    
+            var marker_94153573e67c4e99b3ee53447002847e = L.marker(
+                [4.637163636424813, -74.12124917595436],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_5eca7e48e71b3b58e1da8884aca79d42 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:gray;\u0027\u003eBP6\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_94153573e67c4e99b3ee53447002847e.setIcon(div_icon_5eca7e48e71b3b58e1da8884aca79d42);
+            
+    
+            var marker_a811a2648ccbad4c608b4073f35c7f42 = L.marker(
+                [4.59350542884856, -74.1876562600549],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_1eaa6879a65430477cebd8e9a89e57de = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:gray;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid gray;\n        \"\u003e\n            \u003ci class=\"fa fa-gears\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_a811a2648ccbad4c608b4073f35c7f42.bindTooltip(
+                `<div>
+                     BP8 (Sin flujo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a811a2648ccbad4c608b4073f35c7f42.setIcon(div_icon_1eaa6879a65430477cebd8e9a89e57de);
+            
+    
+            var marker_955ef32fcb859224ee3cb95212ea6bc3 = L.marker(
+                [4.59350542884856, -74.1876562600549],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_4bad53c02b725a400948c6cd6f9e5678 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:gray;\u0027\u003eBP8\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_955ef32fcb859224ee3cb95212ea6bc3.setIcon(div_icon_4bad53c02b725a400948c6cd6f9e5678);
+            
+    
+            var marker_84c72d043ec1d22636d2ddd544a402ed = L.marker(
+                [4.59350542884856, -74.1876562600549],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_ec9ce4005a4a1a9d3ed08b6a0f90f782 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:gray;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid gray;\n        \"\u003e\n            \u003ci class=\"fa fa-gears\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_84c72d043ec1d22636d2ddd544a402ed.bindTooltip(
+                `<div>
+                     BP9 (Sin flujo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_84c72d043ec1d22636d2ddd544a402ed.setIcon(div_icon_ec9ce4005a4a1a9d3ed08b6a0f90f782);
+            
+    
+            var marker_49a14d818b955b4ee42210c41920d548 = L.marker(
+                [4.59350542884856, -74.1876562600549],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_0cd19fc865a6d8ae6dfca076e01b6bae = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:gray;\u0027\u003eBP9\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_49a14d818b955b4ee42210c41920d548.setIcon(div_icon_0cd19fc865a6d8ae6dfca076e01b6bae);
+            
+    
+            var marker_118d4f42cd481f01ec7708f854f7cbe4 = L.marker(
+                [4.71817643938924, -74.19711290351043],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_d787be8433674ab66a960ed9ba78c583 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:gray;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid gray;\n        \"\u003e\n            \u003ci class=\"fa fa-gears\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_118d4f42cd481f01ec7708f854f7cbe4.bindTooltip(
+                `<div>
+                     BP10 (Sin flujo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_118d4f42cd481f01ec7708f854f7cbe4.setIcon(div_icon_d787be8433674ab66a960ed9ba78c583);
+            
+    
+            var marker_191ebcfa2f2cc4f58777ea9eb4e2910c = L.marker(
+                [4.71817643938924, -74.19711290351043],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_22ca614c29ee6ebe172f4747961a55dc = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:gray;\u0027\u003eBP10\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_191ebcfa2f2cc4f58777ea9eb4e2910c.setIcon(div_icon_22ca614c29ee6ebe172f4747961a55dc);
+            
+    
+            var marker_9306c64a7336fb5e48880af29f98ccbb = L.marker(
+                [4.737628120231857, -74.17878918838642],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_7e436063ffb12956db9c7125252f20ea = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:gray;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid gray;\n        \"\u003e\n            \u003ci class=\"fa fa-gears\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_9306c64a7336fb5e48880af29f98ccbb.bindTooltip(
+                `<div>
+                     BP11 (Sin flujo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9306c64a7336fb5e48880af29f98ccbb.setIcon(div_icon_7e436063ffb12956db9c7125252f20ea);
+            
+    
+            var marker_4486fbf3b0c8594bb08461ff785b54df = L.marker(
+                [4.737628120231857, -74.17878918838642],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_bb76a5a979cf9cc8bfc977be6c087439 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:gray;\u0027\u003eBP11\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_4486fbf3b0c8594bb08461ff785b54df.setIcon(div_icon_bb76a5a979cf9cc8bfc977be6c087439);
+            
+    
+            var marker_a24cbef9558da75ccc73cdffd79808ce = L.marker(
+                [4.71772179209387, -74.20780425539276],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_9ae047e75f1525076bdba27ffd52c807 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:gray;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid gray;\n        \"\u003e\n            \u003ci class=\"fa fa-gears\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_a24cbef9558da75ccc73cdffd79808ce.bindTooltip(
+                `<div>
+                     BP12 (Sin flujo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a24cbef9558da75ccc73cdffd79808ce.setIcon(div_icon_9ae047e75f1525076bdba27ffd52c807);
+            
+    
+            var marker_9f30d8757ce11381b321f35bc3149c3d = L.marker(
+                [4.71772179209387, -74.20780425539276],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_b2a6aec3b64f80499aa923d6b3fa75d2 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:gray;\u0027\u003eBP12\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_9f30d8757ce11381b321f35bc3149c3d.setIcon(div_icon_b2a6aec3b64f80499aa923d6b3fa75d2);
+            
+    
+            var marker_0c8cf6bb77f0385bf9acfd30c83568fb = L.marker(
+                [4.742407508022797, -74.1411003149192],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_4361b924482af0b3e9cbe12b61be72f4 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:gray;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid gray;\n        \"\u003e\n            \u003ci class=\"fa fa-gears\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_0c8cf6bb77f0385bf9acfd30c83568fb.bindTooltip(
+                `<div>
+                     BP13 (Sin flujo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0c8cf6bb77f0385bf9acfd30c83568fb.setIcon(div_icon_4361b924482af0b3e9cbe12b61be72f4);
+            
+    
+            var marker_4bee0e0080761c631c898832facd1f7e = L.marker(
+                [4.742407508022797, -74.1411003149192],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_5c6d5e6539970da3374c40125eda2e32 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:gray;\u0027\u003eBP13\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_4bee0e0080761c631c898832facd1f7e.setIcon(div_icon_5c6d5e6539970da3374c40125eda2e32);
+            
+    
+            var marker_16a6052b61ccdc4a2767d0d22630ae96 = L.marker(
+                [4.743075546224129, -74.10272953222494],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_519674d0824a7c9613f0a5bce319453b = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:gray;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid gray;\n        \"\u003e\n            \u003ci class=\"fa fa-gears\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_16a6052b61ccdc4a2767d0d22630ae96.bindTooltip(
+                `<div>
+                     BP14 (Sin flujo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_16a6052b61ccdc4a2767d0d22630ae96.setIcon(div_icon_519674d0824a7c9613f0a5bce319453b);
+            
+    
+            var marker_e2314e1e4d17af5ef024198fcd1f34ad = L.marker(
+                [4.743075546224129, -74.10272953222494],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_54ec2dfa04f45f6a45f89e8e78491ff9 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:gray;\u0027\u003eBP14\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_e2314e1e4d17af5ef024198fcd1f34ad.setIcon(div_icon_54ec2dfa04f45f6a45f89e8e78491ff9);
+            
+    
+            var marker_a70cd239f9d55c545587919821c85a70 = L.marker(
+                [4.718273092695449, -74.06576199673928],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_5b822084b4614f34a0c1c0c7707d0c7b = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:gray;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid gray;\n        \"\u003e\n            \u003ci class=\"fa fa-gears\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_a70cd239f9d55c545587919821c85a70.bindTooltip(
+                `<div>
+                     BP15 (Sin flujo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a70cd239f9d55c545587919821c85a70.setIcon(div_icon_5b822084b4614f34a0c1c0c7707d0c7b);
+            
+    
+            var marker_2523bafafb307513a584a7abd6021957 = L.marker(
+                [4.718273092695449, -74.06576199673928],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_020f234aa637879b68149cc994e28fdc = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:gray;\u0027\u003eBP15\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_2523bafafb307513a584a7abd6021957.setIcon(div_icon_020f234aa637879b68149cc994e28fdc);
+            
+    
+            var marker_1c8f6c2509b47bd53c0e506f41c55702 = L.marker(
+                [4.64033894908109, -74.1220151921059],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_12e3d2389068223b7c39d92598aabb5d = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:gray;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid gray;\n        \"\u003e\n            \u003ci class=\"fa fa-warehouse\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_1c8f6c2509b47bd53c0e506f41c55702.bindTooltip(
+                `<div>
+                     DC2 (Sin flujo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1c8f6c2509b47bd53c0e506f41c55702.setIcon(div_icon_12e3d2389068223b7c39d92598aabb5d);
+            
+    
+            var marker_1d256da47cef60175c0f84b28c8800c3 = L.marker(
+                [4.64033894908109, -74.1220151921059],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_fcd40cdd90aaa492420cfeca7d0deab9 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:gray;\u0027\u003eDC2\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_1d256da47cef60175c0f84b28c8800c3.setIcon(div_icon_fcd40cdd90aaa492420cfeca7d0deab9);
+            
+    
+            var marker_3ec3ac6f362c109c05dca5712bdbef0f = L.marker(
+                [4.72834638044754, -74.1971890329347],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_c400da365f1ba9c34f8956fa10716ee9 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:gray;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid gray;\n        \"\u003e\n            \u003ci class=\"fa fa-warehouse\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_3ec3ac6f362c109c05dca5712bdbef0f.bindTooltip(
+                `<div>
+                     DC4 (Sin flujo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3ec3ac6f362c109c05dca5712bdbef0f.setIcon(div_icon_c400da365f1ba9c34f8956fa10716ee9);
+            
+    
+            var marker_b7dd766c4ab7e2f7fc25b6f709738c42 = L.marker(
+                [4.72834638044754, -74.1971890329347],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_1a5717c68a5fe1459e7f9ee4acfdd9e6 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:gray;\u0027\u003eDC4\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_b7dd766c4ab7e2f7fc25b6f709738c42.setIcon(div_icon_1a5717c68a5fe1459e7f9ee4acfdd9e6);
+            
+    
+            var marker_c01d1f5aaf8e606c8f9e616bb5fbcbb2 = L.marker(
+                [4.74194774728022, -74.1372978692628],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_33a8c2de9e561b412f4d4aaf2ac80bea = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:gray;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid gray;\n        \"\u003e\n            \u003ci class=\"fa fa-warehouse\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_c01d1f5aaf8e606c8f9e616bb5fbcbb2.bindTooltip(
+                `<div>
+                     DC5 (Sin flujo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c01d1f5aaf8e606c8f9e616bb5fbcbb2.setIcon(div_icon_33a8c2de9e561b412f4d4aaf2ac80bea);
+            
+    
+            var marker_5224ba8a9bf0ff3c0f7b53eb7affa195 = L.marker(
+                [4.74194774728022, -74.1372978692628],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_01bb1c10b35283dec56a4eb0713d64b1 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:gray;\u0027\u003eDC5\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_5224ba8a9bf0ff3c0f7b53eb7affa195.setIcon(div_icon_01bb1c10b35283dec56a4eb0713d64b1);
+            
+    
+            var marker_4a41e8dff96ce221ca95bab55b90c7e3 = L.marker(
+                [4.69127147526143, -74.1545191283558],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_ff8da0c38c83cae5e2cd5c8e508d5875 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:gray;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid gray;\n        \"\u003e\n            \u003ci class=\"fa fa-industry\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_4a41e8dff96ce221ca95bab55b90c7e3.bindTooltip(
+                `<div>
+                     FP1 (Sin flujo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4a41e8dff96ce221ca95bab55b90c7e3.setIcon(div_icon_ff8da0c38c83cae5e2cd5c8e508d5875);
+            
+    
+            var marker_b120b887bffb0ff67522a097f53a96f0 = L.marker(
+                [4.69127147526143, -74.1545191283558],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_d04e73838dfddb8508226c595b4aeaa8 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:gray;\u0027\u003eFP1\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_b120b887bffb0ff67522a097f53a96f0.setIcon(div_icon_d04e73838dfddb8508226c595b4aeaa8);
+            
+    
+            var marker_044fa08a5159ef2c187a78185458e2c4 = L.marker(
+                [4.64233894908109, -74.12001519210591],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_86b913046bdbeb1f7cebcf66967c4f2b = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:gray;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid gray;\n        \"\u003e\n            \u003ci class=\"fa fa-industry\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_044fa08a5159ef2c187a78185458e2c4.bindTooltip(
+                `<div>
+                     FP2 (Sin flujo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_044fa08a5159ef2c187a78185458e2c4.setIcon(div_icon_86b913046bdbeb1f7cebcf66967c4f2b);
+            
+    
+            var marker_c5138959230d1494d08bf81f790ee9c0 = L.marker(
+                [4.64233894908109, -74.12001519210591],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_b981f6390f1d9dd17ddc750c9a1674a6 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:gray;\u0027\u003eFP2\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_c5138959230d1494d08bf81f790ee9c0.setIcon(div_icon_b981f6390f1d9dd17ddc750c9a1674a6);
+            
+    
+            var marker_da22b5a6af9c76e0ccb5d70762ef4c4a = L.marker(
+                [4.73034638044754, -74.1951890329347],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_ab1b8bab26f0f202072cc9993826f912 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:gray;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid gray;\n        \"\u003e\n            \u003ci class=\"fa fa-industry\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_da22b5a6af9c76e0ccb5d70762ef4c4a.bindTooltip(
+                `<div>
+                     FP4 (Sin flujo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_da22b5a6af9c76e0ccb5d70762ef4c4a.setIcon(div_icon_ab1b8bab26f0f202072cc9993826f912);
+            
+    
+            var marker_5a4a5ef5a587b6b8e1896349286c172b = L.marker(
+                [4.73034638044754, -74.1951890329347],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_61943692e213971615c87ea4ac8e7ee4 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:gray;\u0027\u003eFP4\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_5a4a5ef5a587b6b8e1896349286c172b.setIcon(div_icon_61943692e213971615c87ea4ac8e7ee4);
+            
+    
+            var marker_f7178e372c175b7ef862217bb0ade3a0 = L.marker(
+                [4.63994229350159, -74.1137036846567],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_50b349c3a5ad96c91c7ff051aa576b22 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:gray;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid gray;\n        \"\u003e\n            \u003ci class=\"fa fa-store\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_f7178e372c175b7ef862217bb0ade3a0.bindTooltip(
+                `<div>
+                     IP1 (Sin flujo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f7178e372c175b7ef862217bb0ade3a0.setIcon(div_icon_50b349c3a5ad96c91c7ff051aa576b22);
+            
+    
+            var marker_06a492ea9e197b67d10a06d66356afde = L.marker(
+                [4.63994229350159, -74.1137036846567],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_f9d29d4b09a98ebb4585fdc76e3b123f = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:gray;\u0027\u003eIP1\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_06a492ea9e197b67d10a06d66356afde.setIcon(div_icon_f9d29d4b09a98ebb4585fdc76e3b123f);
+            
+    
+            var marker_0d7c4f2dc6f2a74cfdae3d8364b44b00 = L.marker(
+                [4.56909031671806, -74.1055054539702],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_87e5c6bb4d8c89541bb6cff2401a7763 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:gray;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid gray;\n        \"\u003e\n            \u003ci class=\"fa fa-store\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_0d7c4f2dc6f2a74cfdae3d8364b44b00.bindTooltip(
+                `<div>
+                     IP5 (Sin flujo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0d7c4f2dc6f2a74cfdae3d8364b44b00.setIcon(div_icon_87e5c6bb4d8c89541bb6cff2401a7763);
+            
+    
+            var marker_8da2a9f5e8d45b570f64594c425e613a = L.marker(
+                [4.56909031671806, -74.1055054539702],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_558f3d0549d34b2d8ea4c91043652d98 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:gray;\u0027\u003eIP5\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_8da2a9f5e8d45b570f64594c425e613a.setIcon(div_icon_558f3d0549d34b2d8ea4c91043652d98);
+            
+    
+            var marker_2c009ed444a3602aa82ab7640be46b9a = L.marker(
+                [4.69619519722989, -74.087106],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_380a3e7da857c297cdd71162c71bcc91 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:gray;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid gray;\n        \"\u003e\n            \u003ci class=\"fa fa-store\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_2c009ed444a3602aa82ab7640be46b9a.bindTooltip(
+                `<div>
+                     IP6 (Sin flujo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2c009ed444a3602aa82ab7640be46b9a.setIcon(div_icon_380a3e7da857c297cdd71162c71bcc91);
+            
+    
+            var marker_39f27d7d5b36cf2560c03b354d254279 = L.marker(
+                [4.69619519722989, -74.087106],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_bedf7d26e20d742f239cdfdf6b20be87 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:gray;\u0027\u003eIP6\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_39f27d7d5b36cf2560c03b354d254279.setIcon(div_icon_bedf7d26e20d742f239cdfdf6b20be87);
+            
+    
+            var marker_1ff8c23c3aaec7497ac41c34a4d6556b = L.marker(
+                [4.56024260439884, -74.135295661419],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_d14a55cf2d27f578043ce6fd27687219 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:gray;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid gray;\n        \"\u003e\n            \u003ci class=\"fa fa-store\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_1ff8c23c3aaec7497ac41c34a4d6556b.bindTooltip(
+                `<div>
+                     IP7 (Sin flujo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1ff8c23c3aaec7497ac41c34a4d6556b.setIcon(div_icon_d14a55cf2d27f578043ce6fd27687219);
+            
+    
+            var marker_c2fe5d8748519017840e0e0732e71d96 = L.marker(
+                [4.56024260439884, -74.135295661419],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_2ab36478c4cd989dde2ece3fa6237b2c = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:gray;\u0027\u003eIP7\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_c2fe5d8748519017840e0e0732e71d96.setIcon(div_icon_2ab36478c4cd989dde2ece3fa6237b2c);
+            
+    
+            var marker_f83e2a98c74a9772024faa2e15f1fabc = L.marker(
+                [4.63260160122327, -74.1063666534326],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_216985f899a09ae14012fcf4508278c2 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:gray;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid gray;\n        \"\u003e\n            \u003ci class=\"fa fa-store\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_f83e2a98c74a9772024faa2e15f1fabc.bindTooltip(
+                `<div>
+                     IP12 (Sin flujo)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f83e2a98c74a9772024faa2e15f1fabc.setIcon(div_icon_216985f899a09ae14012fcf4508278c2);
+            
+    
+            var marker_5a9092a90c950fd230dee3e37d3327a1 = L.marker(
+                [4.63260160122327, -74.1063666534326],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_ec543291c203d036ffe64fd7eae02b6b = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:gray;\u0027\u003eIP12\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_5a9092a90c950fd230dee3e37d3327a1.setIcon(div_icon_ec543291c203d036ffe64fd7eae02b6b);
+            
+    
+            var marker_8f1c2b704916f910514c98db0865047e = L.marker(
+                [4.59430750648137, -74.184223032583],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_18119f3bb86aba289e264a3286741179 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:green;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid green;\n        \"\u003e\n            \u003ci class=\"fa fa-gears\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_8f1c2b704916f910514c98db0865047e.bindTooltip(
+                `<div>
+                     BP7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8f1c2b704916f910514c98db0865047e.setIcon(div_icon_18119f3bb86aba289e264a3286741179);
+            
+    
+            var marker_06a07d67c86b4de1a2dd04aa318413c9 = L.marker(
+                [4.59430750648137, -74.184223032583],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_cb075d5510d00d0aee9ed761cb3a35d8 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:black;\u0027\u003eBP7\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_06a07d67c86b4de1a2dd04aa318413c9.setIcon(div_icon_cb075d5510d00d0aee9ed761cb3a35d8);
+            
+    
+            var marker_bd311a225b1075c0c6f1eae583f456e1 = L.marker(
+                [4.58082844551628, -74.2042318746245],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_7b9ac8c3d91ec7919985be5ea577e3af = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:black;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid black;\n        \"\u003e\n            \u003ci class=\"fa fa-warehouse\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_bd311a225b1075c0c6f1eae583f456e1.bindTooltip(
+                `<div>
+                     DC3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bd311a225b1075c0c6f1eae583f456e1.setIcon(div_icon_7b9ac8c3d91ec7919985be5ea577e3af);
+            
+    
+            var marker_99d9070ee300362b5ac862d1055104fb = L.marker(
+                [4.58082844551628, -74.2042318746245],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_a1265aa55f5c3f00da4e9aad7af996bd = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:black;\u0027\u003eDC3\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_99d9070ee300362b5ac862d1055104fb.setIcon(div_icon_a1265aa55f5c3f00da4e9aad7af996bd);
+            
+    
+            var marker_0d3f9a7a323243d30e9c8335c6fd03b5 = L.marker(
+                [4.58282844551628, -74.2022318746245],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_1bb6f407321688cc559302452141cd79 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:purple;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid purple;\n        \"\u003e\n            \u003ci class=\"fa fa-industry\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_0d3f9a7a323243d30e9c8335c6fd03b5.bindTooltip(
+                `<div>
+                     FP3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0d3f9a7a323243d30e9c8335c6fd03b5.setIcon(div_icon_1bb6f407321688cc559302452141cd79);
+            
+    
+            var marker_d3fd9607ee553e1ef64f5264e248af2e = L.marker(
+                [4.58282844551628, -74.2022318746245],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_7eefa76f4d9395c6848236497f3e28a9 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:black;\u0027\u003eFP3\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_d3fd9607ee553e1ef64f5264e248af2e.setIcon(div_icon_7eefa76f4d9395c6848236497f3e28a9);
+            
+    
+            var marker_74af8df580c7909c4e8f659c237fe0e8 = L.marker(
+                [4.743947747280219, -74.1352978692628],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_ffaaa4e6bb8579ea16cdc13e143e1661 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:purple;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid purple;\n        \"\u003e\n            \u003ci class=\"fa fa-industry\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_74af8df580c7909c4e8f659c237fe0e8.bindTooltip(
+                `<div>
+                     FP5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_74af8df580c7909c4e8f659c237fe0e8.setIcon(div_icon_ffaaa4e6bb8579ea16cdc13e143e1661);
+            
+    
+            var marker_944f6c6d4567133ccd6ae907c90e49e8 = L.marker(
+                [4.743947747280219, -74.1352978692628],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_c23d5a4c7aa306de21f868ec89bec79a = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:black;\u0027\u003eFP5\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_944f6c6d4567133ccd6ae907c90e49e8.setIcon(div_icon_c23d5a4c7aa306de21f868ec89bec79a);
+            
+    
+            var marker_096d639846cd4038a106ede1764ceac4 = L.marker(
+                [4.71938095571935, -74.10745187955],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_229ef6816ee938d5cc259422a3c869f9 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:orange;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid orange;\n        \"\u003e\n            \u003ci class=\"fa fa-store\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_096d639846cd4038a106ede1764ceac4.bindTooltip(
+                `<div>
+                     IP2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_096d639846cd4038a106ede1764ceac4.setIcon(div_icon_229ef6816ee938d5cc259422a3c869f9);
+            
+    
+            var marker_ceaac657c3136fe110079afd605e4587 = L.marker(
+                [4.71938095571935, -74.10745187955],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_0449d4823a82d7bdf66908d8ddaa78f4 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:black;\u0027\u003eIP2\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_ceaac657c3136fe110079afd605e4587.setIcon(div_icon_0449d4823a82d7bdf66908d8ddaa78f4);
+            
+    
+            var marker_efebc6261fc09c9c991c767978430b6a = L.marker(
+                [4.62252287288202, -74.1465241232799],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_fb3b13afca475a5c29479d7b79eae3f3 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:orange;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid orange;\n        \"\u003e\n            \u003ci class=\"fa fa-store\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_efebc6261fc09c9c991c767978430b6a.bindTooltip(
+                `<div>
+                     IP3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_efebc6261fc09c9c991c767978430b6a.setIcon(div_icon_fb3b13afca475a5c29479d7b79eae3f3);
+            
+    
+            var marker_bd4e48b8e1de4c62c2ee030d5d6ac0aa = L.marker(
+                [4.62252287288202, -74.1465241232799],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_f47593ec87ca0d2c3f44fde179969a48 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:black;\u0027\u003eIP3\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_bd4e48b8e1de4c62c2ee030d5d6ac0aa.setIcon(div_icon_f47593ec87ca0d2c3f44fde179969a48);
+            
+    
+            var marker_4e3c0bf722319a7c75c33235a3f4b686 = L.marker(
+                [4.62485791010063, -74.1051734846567],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_a649ed6e97019ffec11c4e683d561db1 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:orange;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid orange;\n        \"\u003e\n            \u003ci class=\"fa fa-store\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_4e3c0bf722319a7c75c33235a3f4b686.bindTooltip(
+                `<div>
+                     IP4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4e3c0bf722319a7c75c33235a3f4b686.setIcon(div_icon_a649ed6e97019ffec11c4e683d561db1);
+            
+    
+            var marker_95306b2532f4e5b8b9011d55cd7f1814 = L.marker(
+                [4.62485791010063, -74.1051734846567],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_4ebba63e0ee7ec715bfd3ca680651175 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:black;\u0027\u003eIP4\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_95306b2532f4e5b8b9011d55cd7f1814.setIcon(div_icon_4ebba63e0ee7ec715bfd3ca680651175);
+            
+    
+            var marker_6b55a412ae18ae72e3da674082031fec = L.marker(
+                [4.67953561129615, -74.1011763036959],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_a1402e38dd8029762959650969dba4c0 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:orange;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid orange;\n        \"\u003e\n            \u003ci class=\"fa fa-store\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_6b55a412ae18ae72e3da674082031fec.bindTooltip(
+                `<div>
+                     IP8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6b55a412ae18ae72e3da674082031fec.setIcon(div_icon_a1402e38dd8029762959650969dba4c0);
+            
+    
+            var marker_1352e02db99abed463cf3ecd4df53fdb = L.marker(
+                [4.67953561129615, -74.1011763036959],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_9398cad951c9d5f26433b21e5c0cd01a = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:black;\u0027\u003eIP8\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_1352e02db99abed463cf3ecd4df53fdb.setIcon(div_icon_9398cad951c9d5f26433b21e5c0cd01a);
+            
+    
+            var marker_b039762449ec32b2bd18079964e5fa9d = L.marker(
+                [4.65024766316892, -74.1217966920595],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_02d0620292aced181de64200f46ed946 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:orange;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid orange;\n        \"\u003e\n            \u003ci class=\"fa fa-store\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_b039762449ec32b2bd18079964e5fa9d.bindTooltip(
+                `<div>
+                     IP9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b039762449ec32b2bd18079964e5fa9d.setIcon(div_icon_02d0620292aced181de64200f46ed946);
+            
+    
+            var marker_ba7dc69b5d8492db834e2376e0384504 = L.marker(
+                [4.65024766316892, -74.1217966920595],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_5d98dd4aeefda137b06a4c71ca7e3478 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:black;\u0027\u003eIP9\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_ba7dc69b5d8492db834e2376e0384504.setIcon(div_icon_5d98dd4aeefda137b06a4c71ca7e3478);
+            
+    
+            var marker_407b5813d1494bf7d1ae5e81e78e603f = L.marker(
+                [4.61310926783584, -74.135893684656],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_bd891c9be819559292a17e1734e16cc6 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:orange;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid orange;\n        \"\u003e\n            \u003ci class=\"fa fa-store\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_407b5813d1494bf7d1ae5e81e78e603f.bindTooltip(
+                `<div>
+                     IP10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_407b5813d1494bf7d1ae5e81e78e603f.setIcon(div_icon_bd891c9be819559292a17e1734e16cc6);
+            
+    
+            var marker_201de37ff93cb2ad85973cc372f1dee9 = L.marker(
+                [4.61310926783584, -74.135893684656],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_256dff3dcbd6664ae98b45752616b900 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:black;\u0027\u003eIP10\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_201de37ff93cb2ad85973cc372f1dee9.setIcon(div_icon_256dff3dcbd6664ae98b45752616b900);
+            
+    
+            var marker_248d4d991b4a34c472b23c672409f7fc = L.marker(
+                [4.74552969198566, -74.0409473],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_5c616f6d94560dd503c000e7b74d59f2 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background-color:orange;\n            border-radius:50%;\n            width:20px;\n            height:20px;\n            display:flex;\n            justify-content:center;\n            align-items:center;\n            color:white;\n            font-size:12px;\n            border:1px solid orange;\n        \"\u003e\n            \u003ci class=\"fa fa-store\"\u003e\u003c/i\u003e\n        \u003c/div\u003e\n        ",
+  "iconSize": [20, 20],
+  "iconAnchor": [10.0, 20],
+  "className": "empty",
+});
+        
+    
+            marker_248d4d991b4a34c472b23c672409f7fc.bindTooltip(
+                `<div>
+                     IP11
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_248d4d991b4a34c472b23c672409f7fc.setIcon(div_icon_5c616f6d94560dd503c000e7b74d59f2);
+            
+    
+            var marker_ef4344290af2b5c31bc11c492119ba25 = L.marker(
+                [4.74552969198566, -74.0409473],
+                {
+}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            var div_icon_fee6e81dc8f4fd105893c3b23291509d = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size:7pt;color:black;\u0027\u003eIP11\u003c/div\u003e",
+  "iconSize": [200, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+        
+    
+                marker_ef4344290af2b5c31bc11c492119ba25.setIcon(div_icon_fee6e81dc8f4fd105893c3b23291509d);
+            
+    
+            var poly_line_04607773af26f1cdffdfb5002391fef9 = L.polyline(
+                [[4.58082844551628, -74.2042318746245], [4.59430750648137, -74.184223032583]],
+                {"bubblingMouseEvents": true, "color": "#ffe119", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffe119", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            poly_line_04607773af26f1cdffdfb5002391fef9.bindTooltip(
+                `<div>
+                     DC3 → BP7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_90d4968679f6ba38eba8c10a0d946534 = L.polyline(
+                [[4.58082844551628, -74.2042318746245], [4.58282844551628, -74.2022318746245]],
+                {"bubblingMouseEvents": true, "color": "#ffe119", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffe119", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            poly_line_90d4968679f6ba38eba8c10a0d946534.bindTooltip(
+                `<div>
+                     DC3 → FP3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_811b6a87125bae51a71d4388526f90cf = L.polyline(
+                [[4.58082844551628, -74.2042318746245], [4.743947747280219, -74.1352978692628]],
+                {"bubblingMouseEvents": true, "color": "#ffe119", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffe119", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            poly_line_811b6a87125bae51a71d4388526f90cf.bindTooltip(
+                `<div>
+                     DC3 → FP5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_9e37c2c8e862de02bde101227ec4bf40 = L.polyline(
+                [[4.58082844551628, -74.2042318746245], [4.71938095571935, -74.10745187955]],
+                {"bubblingMouseEvents": true, "color": "#ffe119", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffe119", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            poly_line_9e37c2c8e862de02bde101227ec4bf40.bindTooltip(
+                `<div>
+                     DC3 → IP2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_7869bf2f8922c3017d07bbd8f307faec = L.polyline(
+                [[4.58082844551628, -74.2042318746245], [4.62252287288202, -74.1465241232799]],
+                {"bubblingMouseEvents": true, "color": "#ffe119", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffe119", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            poly_line_7869bf2f8922c3017d07bbd8f307faec.bindTooltip(
+                `<div>
+                     DC3 → IP3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_6f81343348cf4647b0b725c8fe5c9618 = L.polyline(
+                [[4.58082844551628, -74.2042318746245], [4.62485791010063, -74.1051734846567]],
+                {"bubblingMouseEvents": true, "color": "#ffe119", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffe119", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            poly_line_6f81343348cf4647b0b725c8fe5c9618.bindTooltip(
+                `<div>
+                     DC3 → IP4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_1c93db0524f5c9b76841c41a96cdaf34 = L.polyline(
+                [[4.58082844551628, -74.2042318746245], [4.67953561129615, -74.1011763036959]],
+                {"bubblingMouseEvents": true, "color": "#ffe119", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffe119", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            poly_line_1c93db0524f5c9b76841c41a96cdaf34.bindTooltip(
+                `<div>
+                     DC3 → IP8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_0605fa9f82a0a74b4e6a945ed424bebd = L.polyline(
+                [[4.58082844551628, -74.2042318746245], [4.65024766316892, -74.1217966920595]],
+                {"bubblingMouseEvents": true, "color": "#ffe119", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffe119", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            poly_line_0605fa9f82a0a74b4e6a945ed424bebd.bindTooltip(
+                `<div>
+                     DC3 → IP9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_4bf3d30e8d1701995c76040d48b83dea = L.polyline(
+                [[4.58082844551628, -74.2042318746245], [4.61310926783584, -74.135893684656]],
+                {"bubblingMouseEvents": true, "color": "#ffe119", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffe119", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            poly_line_4bf3d30e8d1701995c76040d48b83dea.bindTooltip(
+                `<div>
+                     DC3 → IP10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_7ca8b272c52686c7149f3d2f336e690f = L.polyline(
+                [[4.58082844551628, -74.2042318746245], [4.74552969198566, -74.0409473]],
+                {"bubblingMouseEvents": true, "color": "#ffe119", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ffe119", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_5d7a16db736ea6253836669301e9b4f5);
+        
+    
+            poly_line_7ca8b272c52686c7149f3d2f336e690f.bindTooltip(
+                `<div>
+                     DC3 → IP11
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
